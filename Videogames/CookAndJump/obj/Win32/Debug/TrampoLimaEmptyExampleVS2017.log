@@ -1,0 +1,27 @@
+﻿  ofApp.cpp
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\capi\depthsensor_capi.h(68): warning C4190: 'nuitrack_ConvertProjToRealCoordsXYZ' tiene una vinculación C especificada, pero devuelve el tipo definido por el usuario 'tdv::nuitrack::Vector3' que es incompatible con C
+  c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\vector3.h(9): note: vea la declaración de 'tdv::nuitrack::Vector3'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\capi\depthsensor_capi.h(69): warning C4190: 'nuitrack_ConvertProjToRealCoordsVector3' tiene una vinculación C especificada, pero devuelve el tipo definido por el usuario 'tdv::nuitrack::Vector3' que es incompatible con C
+  c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\vector3.h(9): note: vea la declaración de 'tdv::nuitrack::Vector3'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\capi\depthsensor_capi.h(71): warning C4190: 'nuitrack_ConvertRealToProjCoordsXYZ' tiene una vinculación C especificada, pero devuelve el tipo definido por el usuario 'tdv::nuitrack::Vector3' que es incompatible con C
+  c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\vector3.h(9): note: vea la declaración de 'tdv::nuitrack::Vector3'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\capi\depthsensor_capi.h(72): warning C4190: 'nuitrack_ConvertRealToProjCoordsVector3' tiene una vinculación C especificada, pero devuelve el tipo definido por el usuario 'tdv::nuitrack::Vector3' que es incompatible con C
+  c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\vector3.h(9): note: vea la declaración de 'tdv::nuitrack::Vector3'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\issue.h(71): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: vea la declaración de 'strcpy'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\addons\ofxnuitrack\libs\nuitrack\include\nuitrack\types\issue.h(81): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: vea la declaración de 'strcpy'
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(363): warning C4018: '<': no coinciden signed/unsigned
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(538): warning C4018: '<': no coinciden signed/unsigned
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(545): warning C4018: '<': no coinciden signed/unsigned
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(1049): warning C4018: '<': no coinciden signed/unsigned
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(1070): warning C4018: '<': no coinciden signed/unsigned
+c:\users\usuario\desktop\of_v0.10.1_vs2017_release\apps\myapps\trampolimaemptyexamplevs2017 - copia\src\ofapp.cpp(1113): warning C4018: '<': no coinciden signed/unsigned
+  TrampoLimaEmptyExampleVS2017.vcxproj -> C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\apps\myApps\TrampoLimaEmptyExampleVS2017 - copia\bin\TrampoLimaEmptyExampleVS2017_debug.exe
+  
+  	                   2	C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\libs\fmodex\lib\vs\Win32\
+  	  *Archivo EXTRA		 6018560	C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\apps\myApps\TrampoLimaEmptyExampleVS2017 - copia\bin\FreeImage.dll
+  
+  	                   1	C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\libs\FreeImage\lib\vs\Win32\
+  	  *Archivo EXTRA		 1266176	C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\apps\myApps\TrampoLimaEmptyExampleVS2017 - copia\bin\fmodex.dll
+  	  *Archivo EXTRA		 1312768	C:\Users\usuario\Desktop\of_v0.10.1_vs2017_release\apps\myApps\TrampoLimaEmptyExampleVS2017 - copia\bin\fmodexL.dll

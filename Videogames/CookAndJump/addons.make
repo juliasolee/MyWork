@@ -1,0 +1,5 @@
+ofxGLWarper
+ofxNuitrack
+ofxTimer
+ofxUI
+ofxXmlSettings
