@@ -1,0 +1,27 @@
+//this var comes from the vertex shader
+//they are interpolated by pixel according to the distance from the vertex
+
+varying vec3 v_color;//Aqui viene el color interpolado
+
+
+//here create uniforms for all the data we need here
+
+varying vec3 pos;
+varying vec3 normal;
+varying vec3 V;
+
+void main()
+{
+	//read from the varying vars (the ones from the vertex shader)
+	vec3 color = v_color;
+
+	//set the ouput color por the pixel
+	gl_FragColor = vec4(color,1.0);//ponemos el color en el pixel
+}
+
+
+
+
+
+
+

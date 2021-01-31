@@ -1,0 +1,43 @@
+﻿  camera.cpp
+  ortographic.cpp
+  perspective.cpp
+  bitmap.cpp
+  eqsolver.cpp
+  film.cpp
+  intersection.cpp
+  matrix4x4.cpp
+  ray.cpp
+  tester.cpp
+  utils.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\core\utils.cpp(38,9): warning C4101: 'dist': variable local sin referencia
+  vector3d.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\core\vector3d.cpp(125,4): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pointlightsource.cpp
+  main.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\main.cpp(51,61): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  material.cpp
+  mirror.cpp
+  Phong.cpp
+  transmissive.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\materials\transmissive.cpp(26,14): warning C4244: 'inicializando': conversión de 'const double' a 'float'; posible pérdida de datos
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\materials\transmissive.cpp(29,15): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  depthshader.cpp
+  directshader.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shaders\directshader.cpp(18,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shaders\directshader.cpp(76,17): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shaders\directshader.cpp(80,18): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shaders\directshader.cpp(20,9): warning C4101: 'V': variable local sin referencia
+  Generando código...
+  Compilando...
+  intersectionshader.cpp
+  normalshader.cpp
+  shader.cpp
+  infiniteplane.cpp
+  mesh.cpp
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shapes\mesh.cpp(14,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  shape.cpp
+  sphere.cpp
+  triangle.cpp
+  Generando código...
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\src\shapes\mesh.cpp(136): warning C4715: 'Mesh::loadOBJ': no todas las rutas de acceso de control devuelven un valor
+  RTIS_V2.vcxproj -> C:\Users\Irene\Documents\RTIS_Students_V2_2019\VisualStudio2015\RTIS_V2\x64\Debug\RTIS_V2.exe

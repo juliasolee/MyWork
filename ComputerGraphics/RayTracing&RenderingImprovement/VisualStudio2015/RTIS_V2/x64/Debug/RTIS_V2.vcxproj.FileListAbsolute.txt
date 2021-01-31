@@ -1,0 +1,2 @@
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\VisualStudio2015\RTIS_V2\x64\Debug\RTIS_V2.exe
+C:\Users\Irene\Documents\RTIS_Students_V2_2019\VisualStudio2015\RTIS_V2\x64\Debug\RTIS_V2.pdb

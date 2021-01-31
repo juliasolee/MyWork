@@ -1,0 +1,64 @@
+//this var comes from the vertex shader
+varying vec2 v_coord;
+varying vec3 V;//vector posicio de l'ull normalitzat;
+varying vec3 pos;
+varying vec3 normal;
+uniform mat4 model;//Aqui recibimos la model view projection desde la aplicacion
+//they are interpolated by pixel according to the distance from the vertex
+uniform vec3 pos_light;
+uniform vec3 pos_light2;
+varying vec3 v_color;//Aqui viene el color interpolado
+uniform vec3 ia, id, is;//Quantitat de llum rebuda per l'objecte
+uniform vec3 id2, is2;
+uniform vec3 ka, kd, ks;//Quantitat de llum que reflexa l'objecte
+//Utilitzarem aquests vectors per calcular ip (intensitat de la llum)
+uniform float alpha; //factor de brillantor
+
+
+//the texture passed from the application
+uniform sampler2D color_texture;
+uniform sampler2D normal_texture;
+//here create uniforms for all the data we need here
+
+
+void main()
+{
+	//read the pixel RGBA from the texture at the position v_coord
+	vec4 color = texture2D( color_texture, v_coord );
+	vec4 normaltxt = texture2D( normal_texture, v_coord);
+	vec3 normalmap = normaltxt.xyz * 2 - 1;
+	vec3 normalrang = (model * vec4(normalmap, 0.0)).xyz;
+	
+	//calculem L i L2
+	vec3 L = (pos_light - pos);
+	vec3 L2 = (pos_light2 - pos);
+	L = normalize(L);
+	L2 = normalize(L2);
+	//V = normalize(V);//Normalitzem V
+	//Calculem R i R2
+	vec3 R = -reflect(L, normalrang);
+	vec3 R2 = -reflect(L2, normalrang);
+	R = normalize(R);//Normalitzem R
+	R2 = normalize(R2);//Normalitzem R2
+
+	
+	//Ecuacio principal per trobar ip: ip = ambient + difusa + especular.
+	//Els calcularem per separat
+	
+	vec3 ambient = ka*ia; //Calculem ambient: ambient = ka * ia;
+	
+	vec3 difusa = kd*color.xyz * clamp(dot(L, normalrang),0.0,1.0) * id; //Calculem difusa: difusa = kd * (L·N) * id
+	vec3 difusa2 = kd*color.xyz * clamp(dot(L2, normalrang),0.0,1.0) * id2; //Calculem difusa2: difusa = kd * (L·N) * id
+	
+	vec3 especular = ks * pow(clamp(dot(R,V),0.0,1.0), alpha) * is*color.w; //Calculem especular: especular = ks * (R·V)alpha * is;
+	vec3 especular2 = ks * pow(clamp(dot(R2,V),0.0,1.0), alpha) * is2*color.w; //Calculem especular2: especular = ks * (R·V)alpha * is;
+	
+	vec3 ip1 = ambient + especular + difusa;
+	vec3 ip2 = ambient + especular2 + difusa2;
+	vec3 ip = ip1 + ip2;
+	
+	
+	//set the ouput color por the pixel
+	gl_FragColor = color * vec4(ip,1.0);//ponemos el color en el pixel
+}
+

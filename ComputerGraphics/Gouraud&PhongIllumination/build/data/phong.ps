@@ -1,0 +1,67 @@
+//this var comes from the vertex shader
+//they are interpolated by pixel according to the distance from the vertex
+uniform vec3 pos_light;
+uniform vec3 pos_light2;
+uniform vec3 v_color;//Aqui viene el color interpolado
+uniform vec3 ia, id, is;//Quantitat de llum rebuda per l'objecte
+uniform vec3 id2, is2;
+uniform vec3 ka, kd, ks;//Quantitat de llum que reflexa l'objecte
+//Utilitzarem aquests vectors per calcular ip (intensitat de la llum)
+uniform float alpha; //factor de brillantor
+uniform vec3 Eye;
+
+//here create uniforms for all the data we need here
+
+varying vec3 pos;
+varying vec3 normal;
+
+void main()
+{
+	//read from the varying vars (the ones from the vertex shader)
+	vec3 color = v_color;
+	vec3 N = normalize(normal);
+	
+	
+	//calculem L i L2
+	vec3 L = (pos_light - pos);
+	vec3 L2 = (pos_light2 - pos);
+	L = normalize(L);
+	L2 = normalize(L2);
+	vec3 V = (Eye - pos);
+	V = normalize(V);//Normalitzem V
+	//Calculem R i R2
+	vec3 R = -reflect(L , N);
+	vec3 R2 = -reflect(L2 , N);
+	R = normalize(R);//Normalitzem R
+	R2 = normalize(R2);//Normalitzem R
+
+	
+	//Ecuacio principal per trobar ip: ip = ambient + difusa + especular.
+	//Els calcularem per separat
+	
+	vec3 ambient = ka*ia; //Calculem ambient: ambient = ka * ia;
+	
+	vec3 difusa = kd * clamp(dot(L, N),0.0,1.0) * id; //Calculem difusa: difusa = kd * (L·N) * id
+	vec3 difusa2 = kd * clamp(dot(L2, N),0.0,1.0) * id2; //Calculem difusa2
+	
+	vec3 especular = ks * pow(clamp(dot(R,V),0.0,1.0), alpha) * is; //Calculem especular: especular = ks * (R·V)alpha * is;
+	vec3 especular2 = ks * pow(clamp(dot(R2,V),0.0,1.0), alpha) * is2; //Calculem especular: especular = ks * (R·V)alpha * is;
+	
+	vec3 ip1 = especular + difusa;
+	vec3 ip2 = especular2 + difusa2;
+	vec3 ip = ambient + ip1 + ip2;
+	
+	
+	//set the ouput color por the pixel
+	gl_FragColor = vec4(ip,1.0);//ponemos el color en el pixel
+}
+
+
+
+
+
+
+
+
+
+
