@@ -1,0 +1,3 @@
+[submodule "ArtificialIntelligence/DogBreedClassifier"]
+	path = ArtificialIntelligence/DogBreedClassifier
+	url = https://github.com/juliasolee/dl-dog-based-project
