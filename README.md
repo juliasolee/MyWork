@@ -26,7 +26,7 @@ My name is Júlia Solé, I'm living in Barcelona, where I licensed in Audiovisua
 <a name="eng"></a>
 ## Engineering
 
-I'm a **Software Engineer** who loves building VR and AI. I recently worked on a project about integrating e-commerce in a VR entertainment inflight platform. After graduating from an engineering degree, I expanded my knowledge in AI with a Deep Learning Nanodegree.
+I'm a **Software Engineer** who loves building VR and AI. In this section you will know more about my academic and professional background.
 
 <a name="aca"></a>
 ### Academic background
@@ -37,5 +37,12 @@ In this section are some of the projects I've made related to my career.
 
 <a name="cg"></a>
 #### Computer Graphics
+You can find all my Computer Graphics projects in my [Computer Graphic section](https://github.com/juliasolee/MyWork/tree/master/ComputerGraphics).
 
-During my Bachelor's degree I have learned about Computer Graphics in several courses, theoretically from the bases, mathematically and practically. The programming language was C++ for all of them and you can find them at my [Computer Graphics Section](https://github.com/juliasolee/MyWork/tree/master/ComputerGraphics).
+<a name="gd"></a>
+#### Game Development
+You can find all the Game Development projects that I have made in my [Videogames section](https://github.com/juliasolee/MyWork/tree/master/Videogames).
+
+<a name="ai"></a>
+#### Artificial Intelligence
+You can find all my projects from the Deep Learning Nanodegree in my [Artificial Intelligence section](https://github.com/juliasolee/MyWork/tree/master/ArtificialIntelligence).
