@@ -4,3 +4,6 @@
 [submodule "ArtificialIntelligence/TVScriptGeneration"]
 	path = ArtificialIntelligence/TVScriptGeneration
 	url = https://github.com/juliasolee/dl-generate-tv-scripts
+[submodule "ArtificialIntelligence/FaceGeneration"]
+	path = ArtificialIntelligence/FaceGeneration
+	url = https://github.com/juliasolee/dl-face-generation
