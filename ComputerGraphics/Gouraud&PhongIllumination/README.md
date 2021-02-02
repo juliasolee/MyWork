@@ -23,4 +23,4 @@ Key 0: Reset
 
 #### Acknowledgements and Contributions
 **Developers:** Júlia Solé Cubilo, Irene Ubieto Alamillo
-**Framework Development and Assistance**: Javi Agenjo
+**Framework Development and Assistance:** Javi Agenjo
