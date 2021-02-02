@@ -43,7 +43,7 @@ By doing this we went from flat shading to smooth shading.
 
 Two possible extensions of this project could be applying textures to the mesh or lowing the computation time by using the grid acceleration method.
 
-#### Acknowledgements and Contributions
+### Acknowledgements and Contributions
 
 **Developers:** Júlia Solé Cubilo, Irene Ubieto Alamillo
 
