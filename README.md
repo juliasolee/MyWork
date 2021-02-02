@@ -41,12 +41,8 @@ During my Bachelor's degree I have learned about Computer Graphics in several co
 
 <a name="gd"></a>
 #### Game Development
-Some of the projects that have taken my C and C++ skills to the next level have been Game Development projects. In them, I have advanced my programming skills, creativity and problem-solving.
-
-You can find all the Game Development projects that I have made in my [Videogames section](https://github.com/juliasolee/MyWork/tree/master/Videogames).
+Some of the projects that have taken my C and C++ skills to the next level have been Game Development projects. In them, I have advanced my programming skills, creativity and problem-solving. You can find all the Game Development projects that I have made in my [Videogames section](https://github.com/juliasolee/MyWork/tree/master/Videogames).
 
 <a name="ai"></a>
 #### Artificial Intelligence
-In my bachelor's degree I did different projects on machine learning. But it wasn't until I finished my degree that I decided to enter into the world of artificial intelligence and to do the Deep Learning Nanodegree. In this course I have been able to learn about different algorithms and Deep Learning models, and put them into practice with different real-based projects and datasets.
-
-You can find all my projects from the Deep Learning Nanodegree in my [Artificial Intelligence section](https://github.com/juliasolee/MyWork/tree/master/ArtificialIntelligence).
+In my bachelor's degree I did different projects on machine learning. But it wasn't until I finished my degree that I decided to enter into the world of artificial intelligence and to do the Deep Learning Nanodegree. In this course I have been able to learn about different algorithms and Deep Learning models, and put them into practice with different real-based projects and datasets. You can find these projects in my [Artificial Intelligence section](https://github.com/juliasolee/MyWork/tree/master/ArtificialIntelligence).
