@@ -47,6 +47,6 @@ Two possible extensions of this project could be applying textures to the mesh o
 
 **Developers:** Júlia Solé Cubilo, Irene Ubieto Alamillo
 
-**Framework Development and Assistance:**: Ricardo Marqués
+**Framework Development and Assistance:** Ricardo Marqués
 
 
