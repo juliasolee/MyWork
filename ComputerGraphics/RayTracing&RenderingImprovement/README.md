@@ -1,6 +1,6 @@
-## Ray Tracing And Rendering Improvement
+# Ray Tracing And Rendering Improvement
 
-### Main Concept
+## Main Concept
 
 Starting from a previous version of this project, which was a **Ray Tracer** that could render different materials as Phong, Diffuse, Glossy, Mirror and Glass (these last two using specular reflections and transmission); different shapes as spheres, infinite planes, and triangles (by ray intersection concepts) and also took into account the lightning conditions of the scene and was able to apply both direct illumination and global illumination.
 
@@ -10,19 +10,16 @@ Starting from a previous version of this project, which was a **Ray Tracer** tha
 
 From there, we implemented a few improvements as we wanted to focus on meshes and deepen into how they are loaded and how they work:
 
-#### Engine
-This project was developed in C++ and OpenGL. It was done for the UPF course Synthetic Image.
-
-### Loading a mesh - .obj file
+## Loading a mesh - .obj file
 
 The vertices of the polygons and the normal to each polygon of the 3D model stored are stored in a .obj file to encode the surface geometry of the model. 
 We created a function called loadOBJ, that will read the file and save the values that interest us.
 
-### Intersecting the mesh
+## Intersecting the mesh
 
 As we stored the mesh, it is formed by a vector of triangles. To know if the rays intersect with this mesh we will check for all the triangles of the mesh and get the values of the intersection for the ones the ray does intersect with.
 
-#### Complex meshes
+### Complex meshes
 
 This method was alright for basic meshes as a cube, but for more complex meshes as, for example, a sphere, the result was not as we desired it.
 
@@ -45,11 +42,15 @@ By doing this we went from flat shading to smooth shading.
 <img src="https://github.com/juliasolee/MyWork/blob/master/ComputerGraphics/RayTracing%26RenderingImprovement/Images/Final.png" alt="Final results" width="500px">
 </p>
 
-### Possible extension
+## Engine
+
+This project was developed in C++ and OpenGL. It was done for the UPF course Synthetic Image.
+
+## Possible extension
 
 Two possible extensions of this project could be applying textures to the mesh or lowing the computation time by using the grid acceleration method.
 
-### Acknowledgements and Contributions
+## Acknowledgements and Contributions
 
 **Developers:** Júlia Solé Cubilo, Irene Ubieto Alamillo
 
