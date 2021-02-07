@@ -1,11 +1,11 @@
-## Gouraud and Phong Illumination
+# Gouraud and Phong Illumination
 
-### Main Concept
+## Main Concept
 In this project we learned how to work with the GPU to implement shaders. We applied Gouraud shading by creating a shader that computed vertex illumination and Phong shading by creating another shader that computed pixel illumination. We also applied blending so we were able to use multiple lights, and camera movement to enable interaction. Then, we improved the Phong shader (that used information per pixel) to apply textures.
 
 This project was developed in C++ and OpenGL. It was done for the UPF course Computer Graphics.
 
-### Controls and functionalities
+## Controls and functionalities
 
 Keys W, A, S and D: move the camera (eye vector) Keys UP, DOWN, LEFT and RIGHT: move the light (light 1)
 
@@ -21,6 +21,8 @@ Two lights: Key H: Turn light 2 on Key O: Turn light 2 off Keys UP, DOWN, LEFT a
 
 Key 0: Reset
 
-#### Acknowledgements and Contributions
+## Acknowledgements and Contributions
+
 **Developers:** Júlia Solé Cubilo, Irene Ubieto Alamillo
+
 **Framework Development and Assistance:** Javi Agenjo
